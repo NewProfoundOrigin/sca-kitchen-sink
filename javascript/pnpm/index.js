@@ -8,8 +8,8 @@ function fetchDataAndEmit(socket) {
     axios.get('https://jsonplaceholder.typicode.com/todos/1')
         .then((response) => {
             console.log('API response:', response.data);
-            console.log('Not an API response:', aksodkopad);
-            debugger;
+                console.log('Not an API response:', aksodkopad);
+                        debugger;
 
             // Send the API response back to the client
             socket.emit('apiResponse', response.data);
